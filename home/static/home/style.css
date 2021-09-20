@@ -1,0 +1,96 @@
+/* SECTION 1 */
+
+.s1-title {
+  font-family: Martel;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 81px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.s1-text {
+  width: 581px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 132.69%;
+  /* or 32px */
+
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.s1-btn {
+  width: 250px;
+  height: 56.25px;
+
+  background: #bf2c53;
+  border-radius: 3px;
+
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+
+  color: #ffffff;
+  border: none;
+}
+
+.btn-border {
+  position: relative;
+  z-index: -2;
+  bottom: 40px;
+  right: 17px;
+  width: 250px;
+  height: 56.25px;
+
+  border: 2px solid #9b234d;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.s1-detail {
+  margin-left: 80px;
+}
+
+.s1-btn-div {
+  margin-left: 17px;
+  margin-top: 60px;
+
+  width: fit-content;
+  height: 76px;
+}
+
+.s1 {
+  margin-top: 66px;
+}
+
+.s1 a {
+  cursor: default;
+}
+
+.award {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.award-text {
+  width: 208px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 33px;
+}
+
+.s1-awards {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 135px;
+}

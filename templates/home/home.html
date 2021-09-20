@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block head %}
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'home/style.css' %}">
+  {% endblock %}
+</head>
+<body>
+  {% block content %}
+    <div class="container">
+      <div class="s1">
+        <div class="s1-detail">
+          <h2 class="s1-title">Bilal Uddin</h2>
+          <p class="s1-text">"Everything is designed. Few things are designed well."</p>
+        
+          <a href="">
+            <div class="s1-btn-div btn-div">
+              <button class="s1-btn layer-btn">Projects</button>
+  
+              <div class="btn-border"></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="s1-awards">
+          <div class="award">
+            <img src="{% static 'home/imgs/award1_light.svg' %}" alt="Award" class="award-img">
+            <p class="award-text">Top user experience and designs</p>
+          </div>
+
+          <div class="award">
+            <img src="{% static 'home/imgs/award2_light.svg' %}" alt="Award" class="award-img">
+            <p class="award-text">We regularly hit Top-5 Trending </p>
+          </div>
+
+          <div class="award">
+            <img src="{% static 'home/imgs/award3_light.svg' %}" alt="Award" class="award-img">
+            <p class="award-text">We promise you results from your website</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+</body>
+</html>

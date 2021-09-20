@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'base/base.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Martel&display=swap" rel="stylesheet">
+
+  {% block head %}
+  <title>ADD A BLOCK</title>
+  {% endblock %}
+</head>
+<body>
+  <div class="base-container">
+    <nav>
+      <div class="navigation">
+        <img src="{% static 'base/imgs/logo.png' %}" alt="Logo" class="logo">
+
+        <ul>
+          <a href="{% url 'index' %}"><li class="home">Home</li></a>
+          <a href=""><li class="portfolio">Portfolio</li></a>
+          <a href=""><li class="contact">Contact</li></a>
+
+          <li class="color-mode"><img src="{% static 'base/imgs/sun_goodware.svg' %}" alt="Sun" class="color-mode-btn"></li>
+        </ul>
+      </div>
+
+      <!-- <div class="nav-dropdown">
+        <div>
+          <a href="{% url 'index' %}"><li class="home">Home</li></a>
+          <a href=""><li class="portfolio">Portfolio</li></a>
+          <a href=""><li class="contact">Contact</li></a>
+        </div>
+      </div> -->
+
+      <!-- <div class="phone-navigation">
+        <img src="{% static 'base_imgs/logo.svg' %}" alt="Logo" class="logo">
+
+        <img src="{% static 'base_imgs/hamburger.svg' %}" alt="Hamburger" class="hamburger">
+      </div> -->
+    </nav>
+
+
+  </div>
+
+  {% block content %}
+    ADD A CONTENT BLOCK
+  {% endblock %}
+</body>
+</html>
