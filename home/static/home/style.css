@@ -247,3 +247,47 @@
   width: fit-content;
   height: 76px;
 }
+
+/* SECTION 5 */
+
+.s5 {
+  margin-top: 144px;
+}
+
+.s5-title {
+  width: 100%;
+  text-align: center;
+
+  font-family: Martel;
+  font-weight: bold;
+  font-size: 48px;
+
+  color: #ffffff;
+}
+
+.s5-sub {
+  width: 100%;
+  text-align: center;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.s5-layout {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.client-img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
