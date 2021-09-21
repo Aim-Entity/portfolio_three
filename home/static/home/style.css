@@ -94,3 +94,156 @@
   margin: 0 auto;
   margin-top: 135px;
 }
+
+/* SECTION 2 */
+
+.s2-title {
+  width: 356px;
+
+  font-family: Martel;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 54px;
+
+  color: #ffffff;
+}
+
+.s2-text {
+  width: 544px;
+
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.s2-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 87.5%;
+  margin: 0 auto;
+}
+
+.s2 {
+  margin-top: 144px;
+}
+
+/* SECTION 3 */
+
+.slider-img {
+  width: 640px;
+  height: 360px;
+  object-fit: cover;
+
+  border-radius: 5px;
+}
+
+.s3 {
+  margin-top: 144px;
+}
+
+.s3-title {
+  width: 100%;
+  text-align: center;
+  font-family: Martel;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 81px;
+
+  color: #ffffff;
+}
+
+.s3-slider {
+  position: relative;
+  left: -410px;
+  display: flex;
+  justify-content: space-between;
+  width: 2100px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+/* SECTION 4 */
+
+.s4 {
+  margin-top: 144px;
+}
+
+.s4-title {
+  width: 100%;
+  text-align: center;
+
+  font-family: Martel;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 81px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.icon-title {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+
+  color: #ffffff;
+  margin-top: 15px;
+}
+
+.icon-text {
+  width: 271px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #ffffff;
+  margin-top: 35px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.s4-icons {
+  margin-top: 66px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.icon-btm {
+  margin-top: 22px;
+}
+
+.s2-btn {
+  width: 250px;
+  height: 56.25px;
+
+  background: #bf2c53;
+  border-radius: 3px;
+
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+
+  color: #ffffff;
+  border: none;
+}
+
+.s2-btn-div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 17px;
+  margin-top: 60px;
+
+  width: fit-content;
+  height: 76px;
+}
