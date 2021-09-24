@@ -20,7 +20,7 @@
   <div class="base-container">
     <nav>
       <div class="navigation">
-        <img src="{% static 'base/imgs/logo.png' %}" alt="Logo" class="logo">
+        <img src="{% static 'base/imgs/logo.svg' %}" alt="Logo" class="logo">
 
         <ul>
           <a href="{% url 'index' %}"><li class="home">Home</li></a>
@@ -31,19 +31,19 @@
         </ul>
       </div>
 
-      <!-- <div class="nav-dropdown">
+      <div class="nav-dropdown">
         <div>
           <a href="{% url 'index' %}"><li class="home">Home</li></a>
           <a href=""><li class="portfolio">Portfolio</li></a>
           <a href=""><li class="contact">Contact</li></a>
         </div>
-      </div> -->
+      </div>
 
-      <!-- <div class="phone-navigation">
-        <img src="{% static 'base_imgs/logo.svg' %}" alt="Logo" class="logo">
+      <div class="phone-navigation">
+        <img src="{% static 'base/imgs/logo.svg' %}" alt="Logo" class="logo">
 
-        <img src="{% static 'base_imgs/hamburger.svg' %}" alt="Hamburger" class="hamburger">
-      </div> -->
+        <img src="{% static 'base/imgs/hamburger.svg' %}" alt="Hamburger" class="hamburger">
+      </div>
     </nav>
 
 
@@ -95,5 +95,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+  <script src="{% static 'base/base.js' %}"></script>
 </body>
 </html>

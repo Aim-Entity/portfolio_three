@@ -139,28 +139,28 @@
         <p class="s5-sub">The businesses that we helped grow</p>
 
         <div class="s5-layout">
-          <div class="client-column">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
+          <div class="client-column cc1">
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
           </div>
 
-          <div class="client-column">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
+          <div class="client-column cc2">
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
           </div>
 
-          <div class="client-column">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
+          <div class="client-column cc3">
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
           </div>
 
-          <div class="client-column">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
+          <div class="client-column cc4">
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
           </div>
 
-          <div class="client-column">
-            <img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img">
+          <div class="client-column cc5">
+            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
           </div>
         </div>
       </div>
@@ -179,9 +179,54 @@
               <div class="right-t-card">
                 <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
 
-                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus et magnis dis</p>
+                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
 
                 <p class="t-name">- Alexander Haas, CEO & Co-founder</p>
+              </div>
+            </div>
+
+            <div class="t-card">
+              <div class="left-t-card">
+                <h2 class="t-rating">4.2</h2>
+                <img src="{% static 'home/imgs/stars.svg' %}" alt="Stars" class="t-stars">
+              </div>
+
+              <div class="right-t-card">
+                <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
+
+                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
+
+                <p class="t-name">- Daniel Craig, CEO & Co-founder</p>
+              </div>
+            </div>
+
+            <div class="t-card">
+              <div class="left-t-card">
+                <h2 class="t-rating">4.2</h2>
+                <img src="{% static 'home/imgs/stars.svg' %}" alt="Stars" class="t-stars">
+              </div>
+
+              <div class="right-t-card">
+                <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
+
+                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
+
+                <p class="t-name">- Sarah Viklund, CEO & Co-founder</p>
+              </div>
+            </div>
+
+            <div class="t-card">
+              <div class="left-t-card">
+                <h2 class="t-rating">4.2</h2>
+                <img src="{% static 'home/imgs/stars.svg' %}" alt="Stars" class="t-stars">
+              </div>
+
+              <div class="right-t-card">
+                <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
+
+                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
+
+                <p class="t-name">- Shwan Kakabara, CEO & Co-founder</p>
               </div>
             </div>
           </div>
@@ -190,6 +235,9 @@
         </div>
       </div>
     </div>
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="{% static 'home/app.js' %}"></script>
   {% endblock %}
 </body>
 </html>
