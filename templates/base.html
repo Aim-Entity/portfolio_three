@@ -24,8 +24,8 @@
 
         <ul>
           <a href="{% url 'index' %}"><li class="home">Home</li></a>
-          <a href=""><li class="portfolio">Portfolio</li></a>
-          <a href=""><li class="contact">Contact</li></a>
+          <a href="{% url 'project' %}"><li class="portfolio">Portfolio</li></a>
+          <a href="{% url 'contact' %}"><li class="contact">Contact</li></a>
 
           <li class="color-mode"><img src="{% static 'base/imgs/sun_goodware.svg' %}" alt="Sun" class="color-mode-btn"></li>
         </ul>
@@ -34,8 +34,8 @@
       <div class="nav-dropdown">
         <div>
           <a href="{% url 'index' %}"><li class="home">Home</li></a>
-          <a href=""><li class="portfolio">Portfolio</li></a>
-          <a href=""><li class="contact">Contact</li></a>
+          <a href="{% url 'project' %}"><li class="portfolio">Portfolio</li></a>
+          <a href="{% url 'contact' %}"><li class="contact">Contact</li></a>
         </div>
       </div>
 
@@ -80,7 +80,7 @@
             <h4>About Us</h4>
 
             <a href=""><p>Testimonials</p></a>
-            <a href=""><p>Projects</p></a>
+            <a href="{% url 'project' %}"><p>Projects</p></a>
             <a href=""><p>What We Do</p></a>
             <a href=""><p>Credits</p></a>
           </div>
