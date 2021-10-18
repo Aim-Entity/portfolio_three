@@ -140,7 +140,9 @@
 
         <div class="s5-layout">
           <div class="client-column cc1">
-            <a href="#"><img src="{% static 'home/imgs/boots.svg' %}" alt="Client" class="client-img"></a>
+            {% for client in clients1 %}
+            <a href="#"><img src="{{ client.image.url }}" alt="Client" class="client-img"></a>
+            {% endfor %}
           </div>
 
           <div class="client-column cc2">
@@ -170,65 +172,22 @@
           <img src="{% static 'home/imgs/left.svg' %}" alt="Left" class="left-chevron chevron">
 
           <div class="t-card-cont">
+            {% for testimonial in testimonials %}
             <div class="t-card">
               <div class="left-t-card">
-                <h2 class="t-rating">4.2</h2>
+                <h2 class="t-rating">{{ testimonial.rating }}</h2>
                 <img src="{% static 'home/imgs/stars.svg' %}" alt="Stars" class="t-stars">
               </div>
 
               <div class="right-t-card">
                 <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
 
-                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
+                <p class="t-text">{{ testimonial.quote }}</p>
 
-                <p class="t-name">- Alexander Haas, CEO & Co-founder</p>
+                <p class="t-name">{{ testimonial.title }}</p>
               </div>
             </div>
-
-            <div class="t-card">
-              <div class="left-t-card">
-                <h2 class="t-rating">4.2</h2>
-                <img src="{% static 'home/imgs/stars.svg' %}" alt="Stars" class="t-stars">
-              </div>
-
-              <div class="right-t-card">
-                <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
-
-                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
-
-                <p class="t-name">- Daniel Craig, CEO & Co-founder</p>
-              </div>
-            </div>
-
-            <div class="t-card">
-              <div class="left-t-card">
-                <h2 class="t-rating">4.2</h2>
-                <img src="{% static 'home/imgs/stars.svg' %}" alt="Stars" class="t-stars">
-              </div>
-
-              <div class="right-t-card">
-                <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
-
-                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
-
-                <p class="t-name">- Sarah Viklund, CEO & Co-founder</p>
-              </div>
-            </div>
-
-            <div class="t-card">
-              <div class="left-t-card">
-                <h2 class="t-rating">4.2</h2>
-                <img src="{% static 'home/imgs/stars.svg' %}" alt="Stars" class="t-stars">
-              </div>
-
-              <div class="right-t-card">
-                <img src="{% static 'home/imgs/quotes.svg' %}" alt="Quotes" class="t-quotes">
-
-                <p class="t-text">at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida</p>
-
-                <p class="t-name">- Shwan Kakabara, CEO & Co-founder</p>
-              </div>
-            </div>
+            {% endfor %}
           </div>
 
           <img src="{% static 'home/imgs/right.svg' %}" alt="Right" class="right-chevron chevron">
