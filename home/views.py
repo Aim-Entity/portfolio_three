@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Testimonial, ClientC1, ClientC2, ClientC3, ClientC4, ClientC5
+from .models import Testimonial, ClientC1, ClientC2, ClientC3, ClientC4, ClientC5, Slider
 
 
 def index(request):
@@ -9,6 +9,7 @@ def index(request):
     clients4 = ClientC4.objects.all()
     clients5 = ClientC5.objects.all()
     testimonials = Testimonial.objects.all()
+    sliders = Slider.objects.all()[:3]
 
     context = {
         "clients1": clients1,
@@ -17,6 +18,7 @@ def index(request):
         "clients4": clients4,
         "clients5": clients5,
         "testimonials": testimonials,
+        "sliders": sliders
     }
     return render(request, "home/home.html", context)
 

@@ -1,4 +1,4 @@
-function slider() {
+function shift() {
   let chevronRight = document.querySelector(".right-chevron");
   let chevronLeft = document.querySelector(".left-chevron");
   let cards = document.querySelectorAll(".t-card");
@@ -50,5 +50,23 @@ function hover(element) {
   };
 }
 
+function slider() {
+  let sliderContainer = document.querySelector(".s3-slider")
+  let position = -410
+  document.addEventListener("scroll", e => {
+
+    if(window.scrollY >= 800) {
+      positionEquation = position + (window.scrollY / 100) + 20
+      positionDifference = position - positionEquation
+
+      // console.log(`${(position - positionDifference) * 1.5}px`)
+      console.log(`${window.scrollY - 800}px`)
+      sliderContainer.style.left = `${(position - positionDifference) + 20}px`
+    }
+  })
+
+}
+
 slider();
-hover(".client-column a")
+shift();
+hover(".client-column a");

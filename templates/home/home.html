@@ -65,9 +65,9 @@
           </h2>
   
           <div class="s3-slider">
-            <img src="{% static 'home/imgs/lake.jpg' %}" alt="Slider" class="slider-img">
-            <img src="{% static 'home/imgs/lake.jpg' %}" alt="Slider" class="slider-img">
-            <img src="{% static 'home/imgs/lake.jpg' %}" alt="Slider" class="slider-img">
+            {% for slider in sliders %}
+            <img src="{{ slider.image.url }}" alt="Slider" class="slider-img">
+            {% endfor %}
           </div>
         </div>
       </div>

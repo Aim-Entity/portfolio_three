@@ -118,7 +118,7 @@ footer hr {
   margin-left: 12%;
 }
 
-.footer-btn {
+.footer-btn-link {
   margin-right: 12%;
   cursor: pointer;
 }
@@ -275,7 +275,7 @@ footer {
     margin-left: 0px;
   }
 
-  .footer-btn {
+  .footer-btn-link {
     margin-right: 0px;
     cursor: pointer;
   }

@@ -1,4 +1,4 @@
-function slider() {
+function shift() {
   let chevronRight = document.querySelector(".right-chevron");
   let chevronLeft = document.querySelector(".left-chevron");
   let cards = document.querySelectorAll(".t-card");
@@ -50,5 +50,41 @@ function hover(element) {
   };
 }
 
+function slider() {
+  if(window.innerWidth > 1100) {
+    let sliderContainer = document.querySelector(".s3-slider")
+    let position = -410
+    document.addEventListener("scroll", e => {
+
+      if(window.scrollY >= 800) {
+        positionEquation = position + (window.scrollY / 100) + 20
+        positionDifference = position - positionEquation
+
+        // console.log(`${(position - positionDifference) * 1.5}px`)
+        // console.log(`${window.scrollY - 800}px`)
+        sliderContainer.style.left = `${window.scrollY - 1750}px`
+      }
+    })
+  }
+}
+
+function enlarge() {
+  let divs = document.querySelectorAll(".client-img");
+  
+  for(let i = 0; i < divs.length; i++) {
+    divs[i].addEventListener("mouseenter", e => {
+      e.target.classList.toggle("client-img");
+      e.target.classList.toggle("client-img-hover");
+    });
+
+    divs[i].addEventListener("mouseout", e => {
+      e.target.classList.toggle("client-img-hover");
+      e.target.classList.toggle("client-img");
+    })
+  }
+}
+
+enlarge();
 slider();
-hover(".client-column a")
+shift();
+hover(".client-column a");

@@ -48,3 +48,7 @@ class Testimonial(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Slider(models.Model):
+    image = models.ImageField(upload_to="sliders")
