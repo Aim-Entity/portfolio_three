@@ -1,3 +1,15 @@
+.colour-mode {
+  filter: invert(100%);
+}
+
+.body-change {
+  background-color: #f0f0f0;
+}
+
+.color-mode-deactive {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -45,6 +57,10 @@ a {
   font-size: 24px;
 
   color: #ffffff;
+}
+
+.color-mode-btn {
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -197,6 +213,24 @@ footer {
   align-items: center;
 
   position: fixed;
+}
+
+/* Colour Stuff */
+
+.simple-light {
+  background: #f0f0f0;
+}
+
+.simple-light-text {
+  color: #f0f0f0;
+}
+
+.simple-dark-text {
+  color: #1e2629;
+}
+
+.simple-dark {
+  color: #1e2629;
 }
 
 @media screen and (max-width: 1000px) {
