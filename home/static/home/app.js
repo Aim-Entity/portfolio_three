@@ -84,6 +84,26 @@ function enlarge() {
   }
 }
 
+function btnAnim() {
+  let btn = document.querySelectorAll(".btn-div")
+
+  for(let i = 0 ; i < btn.length; i++) {
+    btn[i].addEventListener("mouseenter", e => {
+      let layerBtn = e.target.children[0]
+      // layerBtn.classList.toggle("layer-btn-active")
+      // layerBtn.classList.toggle("layer-btn")
+
+      gsap.to(layerBtn, {duration: 0.35, y: "17.8px", x: "-17px", ease: "Power2.easeIn"})
+    })
+
+    btn[i].addEventListener("mouseout", e=> {
+      let layerBtn = e.target.children[0]
+      gsap.to(layerBtn, {duration: 0.35, y: "0px", x: "0px", ease: "Power2.easeIn"})
+    })
+  }
+}
+
+btnAnim();
 enlarge();
 slider();
 shift();

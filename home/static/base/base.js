@@ -37,5 +37,9 @@ function colourMode() {
   })
 };
 
+function btnAnim() {
+
+}
+
 colourMode()
 phoneNav()

@@ -13,4 +13,21 @@ function alternate(){
   }
 };
 
+function shrink() {
+  if(window.innerWidth >= 1000) {
+    let thumbnail = document.querySelectorAll(".project-thumbnail");
+
+    for(let i = 0; i < thumbnail.length; i++){
+      thumbnail[i].addEventListener("mouseenter", e => {
+        gsap.to(e.target, {duration: 0.5, width: "680px", x: "-25px", ease: "Power2.easeOut"})
+      });
+
+      thumbnail[i].addEventListener("mouseout", e => {
+        gsap.to(e.target, {duration: 0.5, width: "830px", x: "25px", ease: "Power2.easeOut"})
+      })
+    }
+  }
+}
+
+shrink()
 alternate()
