@@ -84,6 +84,50 @@ function enlarge() {
   }
 }
 
+function btnAnim() {
+  let btn = document.querySelectorAll(".btn-div")
+
+  for(let i = 0 ; i < btn.length; i++) {
+    btn[i].addEventListener("mouseenter", e => {
+      let layerBtn = e.target.children[0]
+      // layerBtn.classList.toggle("layer-btn-active")
+      // layerBtn.classList.toggle("layer-btn")
+
+      gsap.to(layerBtn, {duration: 0.35, y: "17.8px", x: "-17px", ease: "Power2.easeIn"})
+    })
+
+    btn[i].addEventListener("mouseout", e=> {
+      let layerBtn = e.target.children[0]
+      gsap.to(layerBtn, {duration: 0.35, y: "0px", x: "0px", ease: "Power2.easeIn"})
+    })
+  }
+}
+
+function pageAnimations() {
+  // if(window.innerWidth > 1000) {
+  let award = document.querySelectorAll(".award");
+  // for(let i = 0; i < award.length; i++) {
+  //   // award[i].style.opacity = 0
+  //   award[i].style.top = "75px"
+  // };
+
+  console.log("pass")
+  let state = 0;
+  document.addEventListener("scroll", e => {
+    let scrollNumber = window.scrollY;
+    console.log(scrollNumber);
+
+    if(scrollNumber >= 225 && state == 0){
+      state = 1
+      console.log("Test")
+      
+      gsap.to(award, {duration: 0.45, y: "75px", opacity: 1, ease: "Power2.easeIn", stagger: 0.25})
+    }
+  })
+}
+
+pageAnimations()
+btnAnim();
 enlarge();
 slider();
 shift();

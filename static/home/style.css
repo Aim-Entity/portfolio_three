@@ -51,6 +51,27 @@
   border-radius: 3px;
 }
 
+/* .layer-btn-active {
+  width: 250px;
+  height: 56.25px;
+
+  position: relative;
+  z-index: 0;
+  bottom: -17.8px;
+  right: 17px;
+
+  background: #bf2c53;
+  border-radius: 3px;
+
+  font-size: 24px;
+  line-height: 29px;
+  cursor: pointer;
+
+  color: #ffffff;
+  border: none;
+  transition: 2s ease-in;
+} */
+
 .s1-detail {
   margin-left: 80px;
 }

@@ -103,6 +103,68 @@ function btnAnim() {
   }
 }
 
+function pageAnimations() {
+  if(window.innerWidth > 1000) {
+    let award = document.querySelectorAll(".award");
+
+    let leftPar = document.querySelector(".s2-title");
+    let rightPar = document.querySelector(".s2-text");
+
+    let process = document.querySelectorAll(".icon")
+
+    leftPar.style.opacity = 0;
+    leftPar.style.left = "-70px";
+
+    rightPar.style.opacity = 0;
+    rightPar.style.left = "70px";
+
+    for(let i = 0; i < process.length; i++) {
+      process[i].style.opacity = 0
+      process[i].style.top = "75px"
+    };
+
+    for(let i = 0; i < award.length; i++) {
+      award[i].style.opacity = 0
+      award[i].style.top = "-75px"
+    };
+
+    let state = 0;
+    let state2 = 0;
+    let state3 = 0;
+    let state4 = 0;
+    document.addEventListener("scroll", e => {
+      let scrollNumber = window.scrollY;
+      console.log(scrollNumber)
+
+      if(scrollNumber >= 225 && state == 0){
+        state = 1;
+        
+        gsap.to(award, {duration: 0.60, y: "75px", opacity: 1, ease: "Back.easeOut", stagger: 0.25});
+      };
+
+      if(scrollNumber >= 500 && state2 == 0) {
+        state2 = 1;
+
+        gsap.to(leftPar, {x: "75px", opacity: 1, ease: "Power2.easeOut"});
+        gsap.to(rightPar, {x: "-75px", opacity: 1, ease: "Power2.easeOut"});
+      };
+
+      if(scrollNumber >= 1860 && state3 == 0){
+        state3 = 1
+
+        gsap.to([process[0], process[1], process[2]], {duration: 0.40, y: "-75px", opacity: 1, ease: "Back.easeOut", stagger: 0.35});
+      };
+
+      if(scrollNumber >= 2200 && state4 == 0){
+        state4 = 1
+
+        gsap.to([process[3], process[4], process[5]], {duration: 0.40, y: "-75px", opacity: 1, ease: "Back.easeOut", stagger: 0.35});
+      };
+    })
+  }
+}
+
+pageAnimations()
 btnAnim();
 enlarge();
 slider();

@@ -1,3 +1,7 @@
+.award {
+  position: relative;
+}
+
 /* SECTION 1 */
 
 .s1-title {
@@ -120,6 +124,7 @@
 /* SECTION 2 */
 
 .s2-title {
+  position: relative;
   width: 356px;
 
   font-family: Martel;
@@ -131,6 +136,7 @@
 }
 
 .s2-text {
+  position: relative;
   width: 544px;
 
   font-size: 24px;
@@ -228,6 +234,7 @@
 
 .icon {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
 }
