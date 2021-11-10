@@ -434,3 +434,22 @@ footer {
     margin-top: 60px;
   }
 }
+
+@media screen and (min-width: 1300px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .navigation ul a {
+    font-size: 32px;
+  }
+
+  .color-mode img {
+    width: 75px;
+  }
+
+  .navigation ul {
+    width: 750px;
+  }
+}

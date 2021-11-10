@@ -496,6 +496,17 @@
 }
 
 @media screen and (max-width: 750px) {
+  .s2-btn-div {
+    position: relative;
+    left: 0%;
+    transform: translateX(0%);
+    margin-left: 17px;
+    margin-top: 60px;
+
+    width: fit-content;
+    height: 76px;
+  }
+
   .s1-detail {
     margin-left: 0px;
   }
@@ -617,5 +628,39 @@
 
   .s6 {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .s1-title {
+    font-size: 50px;
+    margin-top: 120px;
+  }
+
+  .s1-text {
+    width: 800px;
+    margin-top: 50px;
+    font-size: 38px;
+  }
+
+  .award-img {
+    width: 150px;
+  }
+
+  .award-text {
+    font-size: 18px;
+  }
+
+  .s2 {
+    margin-top: 80px;
+  }
+
+  .s3-slider {
+    width: 3000px;
+  }
+
+  .slider-img {
+    width: 960px;
+    height: 480px;
   }
 }
